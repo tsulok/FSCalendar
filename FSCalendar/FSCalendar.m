@@ -999,6 +999,12 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         } else {
             _preferredRowHeight = _rowHeight;
         }
+      
+        CGFloat fontSizeHeight = _appearance.cachedTitleFontSize + padding * 2;
+        if (_preferredRowHeight < fontSizeHeight) {
+          _preferredRowHeight = fontSizeHeight;
+        }
+      
     }
     return _preferredRowHeight;
 }

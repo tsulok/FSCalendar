@@ -64,6 +64,7 @@
 		30FCB3961BAAD112002B87AD /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FCB3941BAAD112002B87AD /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		30FCB3971BAAD112002B87AD /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FCB3951BAAD112002B87AD /* FSCalendarStickyHeader.m */; };
 		30FCB3981BAAD112002B87AD /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FCB3951BAAD112002B87AD /* FSCalendarStickyHeader.m */; };
+		701E4E0E1F7D5AD9005C56A5 /* WeekViewTweaksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701E4E0D1F7D5AD9005C56A5 /* WeekViewTweaksViewController.m */; };
 		EE52AE181B91E68A00016662 /* FSCalendarScopeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE52AE171B91E68A00016662 /* FSCalendarScopeExampleViewController.m */; };
 		EE638CC31B89DB6E0006DD1A /* LoadViewExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE638CC21B89DB6E0006DD1A /* LoadViewExampleViewController.m */; };
 		EE638CC91B89DB940006DD1A /* CalendarConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE638CC81B89DB940006DD1A /* CalendarConfigViewController.m */; };
@@ -166,6 +167,8 @@
 		30F4C90E1E07C12B00D2EC4D /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
 		30FCB3941BAAD112002B87AD /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
 		30FCB3951BAAD112002B87AD /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		701E4E0C1F7D5AD9005C56A5 /* WeekViewTweaksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewTweaksViewController.h; sourceTree = "<group>"; };
+		701E4E0D1F7D5AD9005C56A5 /* WeekViewTweaksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewTweaksViewController.m; sourceTree = "<group>"; };
 		EE0D7FC71B89C5D3003C287B /* FSCalendarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCalendarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D7FCB1B89C5D3003C287B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE52AE161B91E68A00016662 /* FSCalendarScopeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeExampleViewController.h; sourceTree = SOURCE_ROOT; };
@@ -320,6 +323,15 @@
 			name = "Hide Placeholders";
 			sourceTree = "<group>";
 		};
+		701E4E0F1F7D5ADD005C56A5 /* WeekViewTweaks */ = {
+			isa = PBXGroup;
+			children = (
+				701E4E0C1F7D5AD9005C56A5 /* WeekViewTweaksViewController.h */,
+				701E4E0D1F7D5AD9005C56A5 /* WeekViewTweaksViewController.m */,
+			);
+			name = WeekViewTweaks;
+			sourceTree = "<group>";
+		};
 		EE0D7FBE1B89C5D3003C287B = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +373,7 @@
 				EE0D80241B89C868003C287B /* Storyboard Example */,
 				EE0D80231B89C853003C287B /* LoadView Example */,
 				EE0D7FCA1B89C5D3003C287B /* Supporting Files */,
+				701E4E0F1F7D5ADD005C56A5 /* WeekViewTweaks */,
 			);
 			name = Example;
 			sourceTree = "<group>";
@@ -578,7 +591,7 @@
 					};
 					EE0D7FC61B89C5D3003C287B = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = HZF422TY46;
+						DevelopmentTeam = WA7W46485L;
 					};
 					EE638CE11B8A1F550006DD1A = {
 						CreatedOnToolsVersion = 6.4;
@@ -675,6 +688,7 @@
 				30B0BAD01B8D8E23004B9476 /* FSCalendar.m in Sources */,
 				3065CAA81CD3506A006C218D /* FSCalendar+Deprecated.m in Sources */,
 				EE638CD31B89DBE90006DD1A /* AppDelegate.m in Sources */,
+				701E4E0E1F7D5AD9005C56A5 /* WeekViewTweaksViewController.m in Sources */,
 				30A495551DCAD9E6000B2F31 /* FSCalendarWeekdayView.m in Sources */,
 				3092253B1B905C4300123031 /* FSCalendarConstants.m in Sources */,
 				30F4C9101E07C12B00D2EC4D /* FSCalendarDelegationFactory.m in Sources */,
@@ -896,11 +910,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HZF422TY46;
+				DEVELOPMENT_TEAM = WA7W46485L;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wenchaod.FSCalendarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsulok.com.wenchaod.FSCalendarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -910,11 +924,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HZF422TY46;
+				DEVELOPMENT_TEAM = WA7W46485L;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wenchaod.FSCalendarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsulok.com.wenchaod.FSCalendarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -83,6 +83,9 @@
 {
     if (![_titleFont isEqual:titleFont]) {
         _titleFont = titleFont;
+        if (_titleFont) {
+          _cachedTitleFontSize = [@"31" sizeWithAttributes:@{NSFontAttributeName: _titleFont}].height;
+        }
         [self.calendar configureAppearance];
     }
 }

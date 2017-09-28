@@ -49,6 +49,11 @@ typedef NS_OPTIONS(NSUInteger, FSCalendarCaseOptions) {
 @property (strong, nonatomic) UIFont   *titleFont;
 
 /**
+* The cached size of the title font
+*/
+@property (assign, nonatomic) CGFloat  cachedTitleFontSize;
+  
+/**
  * The font of the subtitle text.
  */
 @property (strong, nonatomic) UIFont   *subtitleFont;
